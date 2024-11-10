@@ -132,10 +132,7 @@ class _HomeScreen extends State<HomeScreen> {
             final characters =value.users;
             allCharacters = characters;
 
-            return    Expanded(child: Container(
-              margin: EdgeInsets.only(top: AppMargin.m1.h, bottom: AppMargin.m20.h,left: AppMargin.m1.w,right: AppMargin.m1.w),
-              width: AppSize.s100.w,
-              child:     MasonryGridView.builder(
+            return    Expanded(child:    MasonryGridView.builder(
                   gridDelegate:
                    SliverSimpleGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
@@ -169,7 +166,7 @@ class _HomeScreen extends State<HomeScreen> {
                         ));
 
                   }),
-            ));
+            );
 
 
 
